@@ -13,41 +13,20 @@ The main objectives of this analysis are to:
 
 ---
 
-## Data Quality Checks
+## Repository Contents
+1. **Fetch_Data_Chellenge.ipynb**
 
-**Transactions Dataset:**
-- **Missing BARCODE Values (12%):**  
-  Approximately 12% of records lack BARCODE values, which are essential for joining with the Products dataset. These records were removed to ensure accurate mapping.
-- **Duplicate Receipt IDs:**  
-  We identified 25,389 instances where duplicate receipt IDs had conflicting FINAL_QUANTITY or FINAL_SALE values (one row with zero and another with a valid value). These were merged by retaining the nonzero values.
-- **Exact Duplicates:**  
-  171 duplicate rows were removed to avoid data inflation.
-- **Date Inconsistencies:**  
-  94 receipts with a SCAN_DATE earlier than the PURCHASE_DATE were removed due to probable data entry errors.
-- **Outlier Transaction:**  
-  One receipt with an unrealistic FINAL_SALE value of 276 was removed as an outlier.
+  - Data Quality Checks for the three datasets.
+- Outstanding Questions & Next Steps.
 
-**Products Dataset:**
-- **CATEGORY_4 Field:**  
-  Over 90% of records in this field are missing, suggesting that this level of product categorization is incomplete or inconsistently recorded. It has been excluded from the analysis.
-- **Missing Manufacturer/Brand Information:**  
-  Approximately 26% of records lack values in the MANUFACTURER and BRAND fields, which could affect brand-level insights.
-- **BARCODE Integrity Issues:**  
-  3,968 records missing BARCODE values were removed. Additionally, duplicate BARCODE entries with conflicting BRAND values were flagged for further validation.
-- **Duplicate Rows:**  
-  57 duplicate rows were removed to reduce redundancy.
+  
+2. **SQL_Queries.md**
 
-**Users Dataset:**
-- **GENDER Inconsistencies:**  
-  Variations in gender entries (e.g., “non_binary” vs. “Non-Binary”) require standardization for accurate demographic segmentation.
-- **Date Anomalies:**  
-  Records where CREATED_DATE precedes BIRTH_DATE were removed to maintain data integrity.
-- **Missing LANGUAGE Data:**  
-  Approximately 30% of user records are missing LANGUAGE values.
-- **Potential Duplicate Users:**  
-  Cases where multiple accounts (with similar BIRTH_DATE, STATE, and LANGUAGE) may belong to the same individual have been flagged for further investigation.
+   - SQL queries to answer the closed-ended and open-ended business questions.
+  
+3. **Email.pdf**
 
-For a more detailed analysis and the complete list of data quality checks, please refer to the attached Jupyter Notebook.
+  - An email summarizing the results of the investigation, tailored for a product or business leader.
 
 ---
 
