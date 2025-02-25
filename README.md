@@ -19,12 +19,16 @@ The main objectives of this analysis are to:
   - Data Quality Checks for the three datasets.
 - Outstanding Questions & Next Steps.
 
+2. **util.py**
+
+- A utility package containing functions for checking data missingness and duplication.
+- These functions are imported into the Jupyter Notebook for streamlined analysis.
   
-2. **SQL_Queries.md**
+3. **SQL_Queries.md**
 
    - SQL queries to answer the closed-ended and open-ended business questions.
   
-3. **Email.pdf**
+4. **Email.pdf**
 
   - An email summarizing the results of the investigation, tailored for a product or business leader.
 
