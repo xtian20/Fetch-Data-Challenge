@@ -30,32 +30,6 @@ The main objectives of this analysis are to:
 
 ---
 
-## Analysis & Insights
-
-**Key Actionable Insight:**  
-Our transaction data, covering June 2024 to early September 2024, reveals that receipt scans on weekdays consistently far outnumber those on weekends. This suggests that users are significantly more engaged during the workweek, likely incorporating scanning into their daily routines. One possible explanation is that during the summer season, many students and employees might be on vacation or enjoying a more relaxed weekend schedule, resulting in lower scanning activity on weekends.  
-*Actionable Opportunity:*  
-We can explore targeted weekend promotions or engagement strategies—such as exclusive rewards, contests, or special discounts—to stimulate weekend activity and drive overall growth.
-
----
-
-## Outstanding Questions & Next Steps
-
-- **Duplicate Receipt IDs:**  
-  Should we always retain the nonzero FINAL_QUANTITY/FINAL_SALE values, or could zeros sometimes represent legitimate adjustments (e.g., returns or discounts)?
-
-- **Outlier Transactions:**  
-  Should wholesale or bulk purchase receipts be included in our analysis, or should they be treated as anomalies?
-
-- **Duplicate BARCODEs in Products:**  
-  Could discrepancies in duplicate BARCODE entries be due to rebranding or data entry errors? What is the best approach to validate the correct product-brand associations?
-
-- **Potential Duplicate Users:**  
-  How should we handle cases where multiple accounts might belong to a single individual?
-
-Your insights on these questions will be invaluable as we refine our analysis and strategy.
-
----
 
 ## How to Use This Repository
 
