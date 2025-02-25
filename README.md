@@ -14,7 +14,7 @@ The main objectives of this analysis are to:
 ---
 
 ## Repository Contents
-1. **Fetch_Data_Chellenge.ipynb**
+1. **Fetch_Data_Chellenge.ipynb (Jupyter Notebook)**
 
   - Data Quality Checks for the three datasets.
 - Outstanding Questions & Next Steps.
